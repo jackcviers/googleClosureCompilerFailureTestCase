@@ -1,8 +1,8 @@
 (function(){
-    var c = function(msg){
-	return msg+" c.";
+    var a = function (funcB, funcC){
+	return funcB( "a", funcC);
     };
-    window.c = c;
+    window.a = a;
     return;
 }).call(this);
 (function(){
@@ -13,10 +13,10 @@
     return;
 }).call(this);
 (function(){
-    var a = function (funcB, funcC){
-	return funcB( "a", funcC);
+    var c = function(msg){
+	return msg+" c.";
     };
-    window.a = a;
+    window.c = c;
     return;
 }).call(this);
 (function(){
